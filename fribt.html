@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <style>
+        /* General styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex; /* Enable flexbox layout */
+  flex-wrap: wrap; /* Allow items to wrap on small screens */
+  justify-content: space-between; /* Add space between items */
+  align-items: center; /* Align items vertically */
+  gap: 20px; /* Space between the divs */
+  padding: 20px;
+  max-width: 1200px; /* Optional: Set a maximum width for the container */
+  margin: 0 auto; /* Center the container on the page */
+}
+
+.content {
+  flex: 1; /* Make the text div flexible */
+  min-width: 300px; /* Ensure the text div doesn't shrink too much */
+}
+
+.content h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.content p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.content button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.content button:hover {
+  background-color: #0056b3;
+}
+
+.image {
+  flex: 1; /* Make the image div flexible */
+  min-width: 300px; /* Ensure the image div doesn't shrink too much */
+}
+
+.image img {
+  max-width: 100%; /* Scale the image to fit the container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Optional: Add rounded corners to the image */
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack the divs vertically */
+    align-items: center; /* Center align the content */
+  }
+
+  .content, .image {
+    width: 100%; /* Take full width on small screens */
+    text-align: center; /* Optional: Center-align the text */
+  }
+
+  .image img {
+    margin: 0 auto; /* Center the image horizontally */
+  }
+}
+
+    </style>
+</head>
+
+<body>
+<section class="container">
+    <div class="content">
+        <h2>Welcome to Our Website</h2>
+        <p>Explore the amazing features we have to offer. Join us today and take your experience to the next level.</p>
+        <button>Learn More</button>
+    </div>
+    <div class="image">
+        <img src="hero-bg.jpeg" alt="Example Image">
+    </div>
+</section>
+</body>
+
+</html>
